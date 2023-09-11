@@ -11,10 +11,10 @@ function validacaoMedia(nota1, nota2) {
         return "Reprovado";
     }
 }
-var nota1 = parseFloat(process.argv[2]);
-var nota2 = parseFloat(process.argv[3]);
-var status = validacaoMedia(nota1, nota2);
-console.log(`Resultado da média: ` + status);
+var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+var statusNota = validacaoMedia(nota1, nota2);
+console.log(`Resultado da média: ` + statusNota);
 /*var nota1 = parseFloat(prompt("Digite a primeira nota:"));
 var nota2 = parseFloat(prompt("Digite a segunda nota:"));
 var status = validacaoMedia(nota1, nota2);
